@@ -79,7 +79,7 @@ cd online-voting-system
 $servername = "localhost";
 $username = "root";
 $password = "";  // Default MySQL password
-$dbname = "online-voting-system";  // Name of your database
+$dbname = "voting";  // Name of your database
 ```
 
 ### Configure Server:
