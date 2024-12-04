@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: url('image/auth_bg.png') no-repeat center center/cover;
+    background-size: cover;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+section {
+    max-width: 400px;
+    width: 90%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0037ffb3;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.input {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input input,
+.input select {
+    width: 100%;
+    padding: 8px 40px 8px 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 0.875rem;
+    background-color: #fff;
+    color: #333;
+}
+
+.input input:focus,
+.input select:focus{
+    outline: none;
+    border: 1px solid #007bff;
+    box-shadow: 0px 0px 10px rgba(0, 89, 255, 0.4);
+}
+
+.input select {
+    cursor: pointer;
+}
+
+.input i {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Password Toggle Eye Icon */
+#eyeClose {
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#btn {
+    margin-top: 10px;
+}
+
+#para {
+    text-align: center;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+#para a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+#para a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Error Styling */
+.error {
+    color: red;
+    font-size: 0.875rem;
+    margin-top: 5px;
+}
